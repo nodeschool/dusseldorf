@@ -1,6 +1,10 @@
 title: NodeSchool Düsseldorf
 description: "" # this means to ignore newlines until "baseurl:"
 url: "http://nodeschool.io/duesseldorf" # the base hostname & protocol for your site, e.g. http://example.com
+collections:
+  events:
+    output: true
+    permalink: /:path
 
 markdown: kramdown
 exclude:
