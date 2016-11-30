@@ -5,7 +5,8 @@ collections:
   events:
     output: true
     permalink: /:path
-
+last: 000
+    
 markdown: kramdown
 exclude:
   - Gemfile
