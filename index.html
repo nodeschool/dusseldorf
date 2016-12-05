@@ -28,7 +28,7 @@ title: NodeSchool Düsseldorf
 </p>
 {% assign evts = site.events | where_exp: "evt", "evt.number > site.last" %}
 {% for event in evts%}
-<a class="no-underline" href="{{ event.url | absolute_url }}">
+<a class="no-underline" href="{{ event.url | relative_url }}">
   <article class="br2 ba dark-gray b--black-10 mv4 measure w-100">
     <div class="pa2 ph3-ns pb3-ns">
       <div class="dt w-100 mt1">
