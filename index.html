@@ -3,24 +3,43 @@ layout: main
 title: NodeSchool Düsseldorf
 ---
 
-<h1 class="f1 fw3">NodeSchool Düsseldorf</h1>
-
-NodeSchool Düsseldorf is a regular meetup.
-<br/>
+<h2 class="f2 fw3">NodeSchool Düsseldorf</h1>
+<p class="lh-copy measure">
+  Have you always wanted to learn Node.js, but never gotten the chance to?
+  Do you live in or around the North Rhine-Westphalian capital Düsseldorf?
+  Then join us for our regular NodeSchool Düsseldorf meetup!
+</p>
+<h3 class="f3 fw3">Self-guided</h3>
+<p class="lh-copy measure">
+  NodeSchool is no traditional meetup. Together, we work on solving
+  "Workshoppers". These are self-guided tutorials that teach aspects of
+  the Node.js ecosystem. They are open-source, which means that you can
+  even continue to learn at home!
+</p>
+<h3 class="f3 fw3">Open for everyone</h3>
+<p class="lh-copy measure">
+  NodeSchool is no traditional meetup. Together, we work on solving
+  "Workshoppers". These are self-guided tutorials that teach aspects
+  of the Node.js ecosystem. They are open-source, which means that you
+  can even continue to learn at home!
+</p>
+<p class="lh-copy measure">
+  If you're interested, please check out our upcoming meeting(s):
+</p>
 {% assign evts = site.events | where_exp: "evt", "evt.number > site.last" %}
 {% for event in evts%}
 <a class="no-underline" href="{{ event.url }}">
-  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m mw7">
-  <div class="pa2 ph3-ns pb3-ns">
-    <div class="dt w-100 mt1">
-      <div class="dtc">
-        <h1 class="f5 f4-ns mv0 dim">{{ event.title }}</h1>
-      </div>
-      <div class="dtc tr">
-        <h2 class="f5 mv0">{{ event.when | date_to_string }}</h2>
+  <article class="br2 ba dark-gray b--black-10 mv4 measure w-100">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0 dim">{{ event.title }}</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">{{ event.when | date_to_string }}</h2>
+        </div>
       </div>
     </div>
-  </div>
 </article>
 </a>
 {% endfor %}
