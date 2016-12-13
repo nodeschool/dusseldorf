@@ -27,7 +27,7 @@ please contact an organizer immediately.
 
 ### NodeSchool Düsseldorf 
 
-* Organizers: [Fen](http://twitter.com/tilepool), [Alexander](http://cilice.me) 
+* Organizers: [Penny](http://twitter.com/tilepool), [Alexander](http://cilice.me) 
 * Meetup URL: http://ti.to/nodeschooldus
 
 **If you have questions or feedback about this Code of Conduct please contact
