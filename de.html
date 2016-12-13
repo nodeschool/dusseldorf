@@ -3,56 +3,55 @@ layout: main
 title: NodeSchool Düsseldorf
 ---
 
-<h2 class="f2 fw3">NodeSchool Düsseldorf</h2>
-  <p class="lh-copy measure">
-    Wolltest du schon immer Node.js lernen, hattest aber nie die Zeit dazu?
-    Lebst du in oder um die Nordrhein-Westfälische Hauptstadt Düsseldorf herum?
-    Dann komm doch zu unserem NodeSchool-Meetup in Düsseldorf!
-  </p>
-  <h3 class="f3 fw3">Selbstgeleitet</h3>
-  <p class="lh-copy measure">
-    NodeSchool ist kein traditionelles Meetup. Zusammen arbeiten wir daran,
-    sogenannte "Workshopper" zu absolvieren. Das sind selbstgeleitete
-    Tutorials, die Aspekte des Node.js-Ökosystems beibringen. Sie sind
-    open-source, das heißt, dass du sogar zuhause weiterlernen kannst!
-  </p>
-  <h3 class="f3 fw3">Offen für jeden</h3>
-  <p class="lh-copy measure">
-    We think it's important that everyone can attend, no matter if they
-    haven't ever programmed in JavaScript or already have experience.
-    Because of this, we offer two workshoppers at every meetup so that
-    everyone can work on a topic they're interested in.
-    We also have a
-    <a href="https://github.com/nodeschool/dusseldorf/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>
-    which we will enforce at our meetup.
-    Wir glauben fest daran, dass es wichtig ist, dass jeder mit uns lernen
-    kann, egal, ob man nie in JavaScript programmiert hat oder ob man schon
-    Erfahrung im Node.js-Bereich hat. Deswegen bieten wir bei jedem Meetup
-    zwei verschiedene Workshopper an, damit jeder an dem arbeiten kann, was
-    er/sie interessant findet.
-    Wir haben auch einen
-    <a href="https://github.com/nodeschool/dusseldorf/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>,
-    den wir bei unserem Meetup vollstrecken werden.
-  </p>
-  <p class="lh-copy measure">
-    Du bist interessiert? Dann schau dir unsere nächsten Meetups an:
-  </p>
-  {% assign evts = site.events | where_exp: "evt", "evt.number > site.last" %}
-  {% for event in evts%}
-  <a class="no-underline" href="{{ event.url | relative_url }}">
-    <article class="br2 ba dark-gray b--black-10 mv4 measure w-100">
-      <div class="pa2 ph3-ns pb3-ns">
-        <div class="dt w-100 mt1">
-          <div class="dtc">
-            <h1 class="f5 f4-ns mv0 dim">{{ event.title }}</h1>
-          </div>
-          <div class="dtc tr">
-            <h2 class="f5 mv0">{{ event.when | date_to_string }}</h2>
-          </div>
+<p class="f5 f3-ns lh-copy measure sans-serif">
+  Wolltest du schon immer Node.js lernen, hattest aber nie die Zeit dazu?
+  Lebst du in oder um die Nordrhein-Westfälische Hauptstadt Düsseldorf herum?
+  Dann komm doch zu unserem NodeSchool-Meetup in Düsseldorf!
+</p>
+<h3 class="f2 fw3">Selbstgeleitet</h3>
+<p class="f5 f3-ns lh-copy measure sans-serif">
+  NodeSchool ist kein traditionelles Meetup. Zusammen arbeiten wir daran,
+  sogenannte "Workshopper" zu absolvieren. Das sind selbstgeleitete
+  Tutorials, die Aspekte des Node.js-Ökosystems beibringen. Sie sind
+  open-source, das heißt, dass du sogar zuhause weiterlernen kannst!
+</p>
+<h3 class="f2 fw3">Offen für jeden</h3>
+<p class="f5 f3-ns lh-copy measure sans-serif">
+  We think it's important that everyone can attend, no matter if they
+  haven't ever programmed in JavaScript or already have experience.
+  Because of this, we offer two workshoppers at every meetup so that
+  everyone can work on a topic they're interested in.
+  We also have a
+  <a href="https://github.com/nodeschool/dusseldorf/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>
+  which we will enforce at our meetup.
+  Wir glauben fest daran, dass es wichtig ist, dass jeder mit uns lernen
+  kann, egal, ob man nie in JavaScript programmiert hat oder ob man schon
+  Erfahrung im Node.js-Bereich hat. Deswegen bieten wir bei jedem Meetup
+  zwei verschiedene Workshopper an, damit jeder an dem arbeiten kann, was
+  er/sie interessant findet.
+  Wir haben auch einen
+  <a href="https://github.com/nodeschool/dusseldorf/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>,
+  den wir bei unserem Meetup vollstrecken werden.
+</p>
+<p class="f5 f3-ns lh-copy measure sans-serif">
+  Du bist interessiert? Dann schau dir unsere nächsten Meetups an:
+</p>
+{% assign evts = site.events | where_exp: "evt", "evt.number > site.last" %}
+{% for event in evts%}
+<a class="no-underline" href="{{ event.url | relative_url }}">
+  <article class="br2 ba dark-gray b--black-10 mv4 measure w-100">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0 dim">{{ event.title }}</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">{{ event.when | date_to_string }}</h2>
         </div>
       </div>
-    </article>
-  </a>
-  {% endfor %}
+    </div>
+  </article>
+</a>
+{% endfor %}
 
-  <a href="{{ '/' | relative_url }}">In English</a>
+<a href="{{ '/' | relative_url }}">In English</a>

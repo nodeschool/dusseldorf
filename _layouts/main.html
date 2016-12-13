@@ -7,10 +7,21 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <div class="ph3 ph5-ns sans-serif mw9 mw8-ns">
-      <p class="f4 lh-copy measure">
-        {{ content }}
-      </p>
-    </div>
+    <article>
+      <header class="bg-gold sans-serif">
+        <div class="mw9 center pa4 ph7-l">
+          <h3 class="f2 f1-l measure-narrow lh-title mv0">
+            <span class="bg-black-90 lh-copy white pa1 tracked-tight">{{ page.title }}</span>
+          </h3>
+          <a class="f6 link dim br1 ph3 pv2 mb2 dib white bg-blue" href="http://twitter.com/nodeschooldus">@nodeschooldus on Twitter</a>
+          <a class="f6 link dim br1 ph3 pv2 mb2 dib white bg-black" href="http://github.com/nodeschool/dusseldorf">GitHub Repository</a>
+        </div>
+      </header>
+      <div class="pa4 ph7-l sans-serif mw9-l center">
+        <p class="f5 f3-ns lh-copy measure">
+          {{ content }}
+        </p>
+      </div>
+    </article>
   </body>
 </html>
