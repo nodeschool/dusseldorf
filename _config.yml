@@ -5,7 +5,7 @@ collections:
   events:
     output: true
     permalink: /:path
-last: 000
+last: 0
     
 markdown: kramdown
 exclude:
