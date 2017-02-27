@@ -1,12 +1,12 @@
 title: NodeSchool Düsseldorf
-description: "" 
+description: ""
 url: "http://nodeschool.io/duesseldorf"
 collections:
   events:
     output: true
     permalink: /:path
-last: 0
-    
+last: 1
+
 markdown: kramdown
 exclude:
   - Gemfile
