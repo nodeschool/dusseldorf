@@ -29,22 +29,27 @@ title: NodeSchool Düsseldorf
   If you're interested, please check out our upcoming meeting(s):
 </p>
 {% assign evts = site.events | where_exp: "evt", "evt.number > site.last" %}
-{% for event in evts%}
-<a class="no-underline" href="{{ event.url | relative_url }}">
-  <article class="br2 ba dark-gray b--black-10 mv4 measure w-100">
-    <div class="pa2 ph3-ns pb3-ns">
-      <div class="dt w-100 mt1">
-        <div class="dtc">
-          <h1 class="f5 f4-ns mv0 dim">{{ event.title }}</h1>
-        </div>
-        <div class="dtc tr">
-          <h2 class="f5 mv0">{{ event.when | date_to_string }}</h2>
+{% if evts.length > 0 %}
+  {% for event in evts %}
+  <a class="no-underline" href="{{ event.url | relative_url }}">
+    <article class="br2 ba dark-gray b--black-10 mv4 measure w-100">
+      <div class="pa2 ph3-ns pb3-ns">
+        <div class="dt w-100 mt1">
+          <div class="dtc">
+            <h1 class="f5 f4-ns mv0 dim">{{ event.title }}</h1>
+          </div>
+          <div class="dtc tr">
+            <h2 class="f5 mv0">{{ event.when | date_to_string }}</h2>
+          </div>
         </div>
       </div>
-    </div>
-</article>
-</a>
-{% endfor %}
+  </article>
+  </a>
+  {% endfor %}
+{% else %}
+  <div class="f4 f3-ns mb5 lh-copy measure sans-serif">
+    Whoops, currently there aren't any planned events!
+  </div>
+{% endif %}
 
 <a href="{{ '/de' | relative_url }}">Auf Deutsch</a>
-
