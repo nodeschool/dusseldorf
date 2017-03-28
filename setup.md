@@ -5,7 +5,7 @@ title: Setup Guide
 
 ## On Windows
 
-- Download the [Node.js Installer][nodeinstaller-win].
+- Download the [Node.js Installer][nodejs-website].
 - Make sure to select the current (>7) version.
 
 ## On MacOS
