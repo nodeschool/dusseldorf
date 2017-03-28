@@ -16,13 +16,14 @@ title: Setup Guide
 
 ### Manually
 
-- Download the latest `.pkg` from http://nodejs.org and install it.
+- Download the latest `.pkg` from [the Node.js website][nodejs-website] and
+  install it.
 
 ## On Linux/UNIX
 
 ### Using [nvm]
 
-- Install `nvm` from https://github.com/creationix/nvm
+- Install `nvm` from [here][nvm].
 - Execute `nvm install node` in a terminal.
 - Set the installed version as default by executing `nvm alias default node`.
 
