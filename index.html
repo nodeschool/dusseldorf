@@ -4,52 +4,45 @@ title: NodeSchool Düsseldorf
 ---
 
 <p class="f5 f4-ns mb5 lh-copy measure sans-serif">
-  Have you always wanted to learn Node.js, but never gotten the chance to?
-  Do you live in or around the North Rhine-Westphalian capital Düsseldorf?
-  Then join us for our regular NodeSchool Düsseldorf meetup!
+  Wolltest du schon immer Node.js lernen, hattest aber nie die Zeit dazu?
+  Lebst du in oder um die Nordrhein-Westfälische Hauptstadt Düsseldorf herum?
+  Dann komm doch zu unserem NodeSchool-Meetup in Düsseldorf!
 </p>
-<h3 class="f3 fw3">Self-guided</h3>
+<h3 class="f3 fw3">Selbstgeleitet</h3>
 <p class="f5 f4-ns mb5 lh-copy measure sans-serif">
-  NodeSchool is no traditional meetup. Together, we work on solving
-  "Workshoppers". These are self-guided tutorials that teach aspects of
-  the Node.js ecosystem. They are open-source, which means that you can
-  even continue to learn at home!
+  NodeSchool ist kein traditionelles Meetup. Zusammen arbeiten wir daran,
+  sogenannte "Workshopper" zu absolvieren. Das sind selbstgeleitete
+  Tutorials, die Aspekte des Node.js-Ökosystems beibringen. Sie sind
+  open-source, das heißt, dass du sogar zuhause weiterlernen kannst!
 </p>
-<h3 class="f3 fw3">Open for everyone</h3>
+<h3 class="f3 fw3">Offen für jeden</h3>
 <p class="f5 f4-ns mb5 lh-copy measure sans-serif">
-  We think it's important that everyone can attend, no matter if they
-  haven't ever programmed in JavaScript or already have experience.
-  Because of this, we offer two workshoppers at every meetup so that
-  everyone can work on a topic they're interested in.
-  We also have a
-  <a href="https://github.com/nodeschool/dusseldorf/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>
-  which we will enforce at our meetup.
+  Wir glauben fest daran, dass es wichtig ist, dass jeder mit uns lernen
+  kann, egal, ob man nie in JavaScript programmiert hat oder ob man schon
+  Erfahrung im Node.js-Bereich hat. Deswegen bieten wir bei jedem Meetup
+  zwei verschiedene Workshopper an, damit jeder an dem arbeiten kann, was
+  er/sie interessant findet.
+  Wir haben auch einen
+  <a href="https://github.com/nodeschool/dusseldorf/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>,
+  den wir bei unserem Meetup vollstrecken werden.
 </p>
 <p class="f5 f4-ns mb5 lh-copy measure sans-serif">
-  If you're interested, please check out our upcoming meeting(s):
+  Du bist interessiert? Dann schau dir unsere nächsten Meetups an:
 </p>
 {% assign evts = site.events | where_exp: "evt", "evt.number > site.last" %}
-{% if evts.length > 0 %}
-  {% for event in evts %}
-  <a class="no-underline" href="{{ event.url | relative_url }}">
-    <article class="br2 ba dark-gray b--black-10 mv4 measure w-100">
-      <div class="pa2 ph3-ns pb3-ns">
-        <div class="dt w-100 mt1">
-          <div class="dtc">
-            <h1 class="f5 f4-ns mv0 dim">{{ event.title }}</h1>
-          </div>
-          <div class="dtc tr">
-            <h2 class="f5 mv0">{{ event.when | date_to_string }}</h2>
-          </div>
+{% for event in evts%}
+<a class="no-underline" href="{{ event.url | relative_url }}">
+  <article class="br2 ba dark-gray b--black-10 mv4 measure w-100">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0 dim">{{ event.title }}</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">{{ event.when | date_to_string }}</h2>
         </div>
       </div>
+    </div>
   </article>
-  </a>
-  {% endfor %}
-{% else %}
-  <div class="f4 f3-ns mb5 lh-copy measure sans-serif">
-    Whoops, currently there aren't any planned events!
-  </div>
-{% endif %}
-
-<a href="{{ '/de' | relative_url }}">Auf Deutsch</a>
+</a>
+{% endfor %}
