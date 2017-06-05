@@ -9,8 +9,6 @@ Said website is live here: http://nodeschool.io/dusseldorf
 ### Team
 
 - Penny, [Twitter][penny_tw], [GitHub][penny_gh]
-- Alexander Plavinski, [GitHub][alex_gh]
 
-[penny_tw]: http://twitter.com/tilepool
-[penny_gh]: http://github.com/quiltbag
-[alex_gh]: http://github.com/cilice
+[penny_tw]: http://twitter.com/pennysucks
+[penny_gh]: http://github.com/pup
