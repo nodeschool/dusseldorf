@@ -8,7 +8,6 @@ Said website is live here: http://nodeschool.io/dusseldorf
 
 ### Team
 
-- Penny, [Twitter][penny_tw], [GitHub][penny_gh]
+- Olivia, [GitHub][liv_gh]
 
-[penny_tw]: http://twitter.com/pennysucks
-[penny_gh]: http://github.com/pup
+[liv_gh]: http://github.com/pup
